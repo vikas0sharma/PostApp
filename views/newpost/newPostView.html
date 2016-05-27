@@ -1,0 +1,29 @@
+﻿<section ng-controller="NewPostController" >
+
+<div class="myForm">
+    <div class="alert alert-success fade in" ng-show="isPostCreated">
+    <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> Your Post is successfully created.
+  </div>
+    <form role="form" name="myForm">
+        <div class="form-group">
+            <label class="textInputStyle">User Id</label>
+            <input type="number" class="form-control" ng-model="postData.userId">
+        </div>
+        <div class="form-group">
+            <label class="textInputStyle">Post Id</label>
+            <input type="number" class="form-control" ng-model="postData.id">
+        </div>
+        <div class="form-group">
+            <label class="textInputStyle">Title</label>
+            <input type="text" class="form-control" ng-model="postData.title" name="title" ng-class="{ 'has-error' : !myForm.title.$pristine && postData.title==''}">
+            <span ng-show="postData.title=='' && !myForm.title.$pristine" style="color:red;">Title is required!</span>
+        </div>
+        <div class="form-group">
+            <label class="textInputStyle">Body</label>
+            <textarea class="form-control" rows="5" ng-model="postData.body"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info" ng-disabled="postData.title=='' || postData.body=='' || postData.userId=='' || postData.id==''" ng-click="addNewPostClickHandler(postData)">Submit</button>
+    </form>
+</div>
+</section>

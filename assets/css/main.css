@@ -1,0 +1,44 @@
+﻿.headerPanel{
+    width: 65%;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px #9E9E9E;
+    margin-bottom: 50px;
+    background-color:white;
+}
+
+.divHeader{
+    background: #00A7FF;
+    font-family: monospace;
+    box-shadow: 0px 1px 5px #A7A7A7;
+    color: white;
+    font-size: large;
+}
+
+.textStyling{
+    font-family: cursive;
+    text-align: justify;
+    color: #060606;
+}
+
+body{
+    background-color:#F1F1F1;
+}
+
+.myForm{
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 55px;
+    background-color: white;
+    box-shadow: 0px 0px 12px #8E8E8E;
+
+}
+
+.textInputStyle{
+    font-family: cursive;       
+}
+.has-error{
+border-color: red;
+}

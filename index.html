@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="ngPostsApp" >
+<head>
+    <title>Posts</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#/">My POST App</a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right pull-right">
+                <li><a href="#/newpost"><span class="glyphicon glyphicon-plus"></span> Add New Post</a></li>
+            </div>
+
+        </div>
+    </nav>
+
+    <ng-view></ng-view>
+
+
+    <script src="assets/js/libs/angular.min.js"></script>
+    <script src="assets/js/libs/angular-route.js"></script>
+    <script src="assets/js/libs/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/libs/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="services/initService.js"></script>
+    <script src="controllers/posts/postsController.js"></script>
+    <script src="controllers/newpost/newPostController.js"></script>
+    <script src="directives/postPanelDirective.js"></script>
+
+    <script src="services/postServices.js"></script>
+</body>
+</html>
