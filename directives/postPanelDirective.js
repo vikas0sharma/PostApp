@@ -5,7 +5,9 @@ ngPostsApp.directive('postPanel', function () {
         restrict: 'A',
         scope: {
             ngHeading: '@',
-            ngBody:'@'
+            ngBody: '@',
+            ngAuthor: '@',
+            ngDate:'@'
         },
         templateUrl: 'partials/postpanel/panel.html'
     }

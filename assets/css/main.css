@@ -1,12 +1,84 @@
-﻿.headerPanel{
-    width: 65%;
-    margin: auto;
-    border-radius: 7px;
-    box-shadow: 1px 2px 4px #9E9E9E;
-    margin-bottom: 50px;
-    background-color:white;
+﻿.intro-header {
+background-size: cover;
+
 }
 
+.navbar-custom {
+    background: 0 0;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+}
+@media only screen and (min-width: 768px) {
+    .navbar-custom {
+        background: transparent;
+        border-bottom: 1px solid transparent;
+    }
+
+   .navbar-custom .navbar-brand {
+     color: white;
+     padding: 20px;
+  }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+        color: rgba(255, 255, 255, 0.8);
+  }
+   .navbar-custom .nav li a {
+    color: white;
+    padding: 20px;
+  }
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+    
+}
+@media only screen and (max-width: 768px) {
+     .navbar-custom {
+        background: white;
+        border-bottom: 1px solid transparent;
+    }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+       color: #0085a1;
+  }
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: #0085a1;
+  }
+
+}
+
+h1,h2 {
+
+font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+font-weight: 800;
+font-size: 65px;
+}
+
+/*@media only screen and (max-width:768px) {
+
+    h1{
+        color:red;
+    }
+}*/
+
+.logo {
+text-align:center;
+color:white;
+font-weight: bold;
+
+padding:100px;
+}
+
+.subhead {
+font-size: 24px;
+line-height: 1.1;
+display: block;
+font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+font-weight: 300;
+margin: 10px 0 0;
+
+}
 .divHeader{
     background: #00A7FF;
     font-family: monospace;
@@ -15,15 +87,12 @@
     font-size: large;
 }
 
-.textStyling{
-    font-family: cursive;
-    text-align: justify;
+.text-style{
     color: #060606;
 }
 
-body{
-    background-color:#F1F1F1;
-}
+
+
 
 .myForm{
     width: 50%;
@@ -41,4 +110,44 @@ body{
 }
 .has-error{
 border-color: red;
+}
+
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
+
+.title-style {
+    font-size:36px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.title-style:hover{  
+    color: #0085a1;
+}
+.author-sign {
+font-style: italic;
+color: grey;
+}
+
+.btn-style {
+    padding: 10px 30px;
+    border: 1px #ddd solid;
+    width: 181px;
+    margin-bottom:10px;
+    font-size:18px;
+    
+}
+.btn-style:hover{
+    background: #0085a1;
+    color:white;
+}
+
+.copyright {
+font-size: 14px;
+text-align: center;
+margin-bottom: 0;
 }

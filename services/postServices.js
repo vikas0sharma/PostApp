@@ -6,7 +6,9 @@
     var url = InitApp.getConfigData().url;
 
     this.getAllPosts = function () {
-		
+
+        //return dummyData;
+        var url = 'services/dummy_data.json';
 		return $http.get(url)
             .then(function (response) {
                 deferred.resolve(response.data);
@@ -16,6 +18,7 @@
                 return deferred.promise;
             })
         ;
+        
     };
 
     this.addNewPost = function (_data,successHandler,errorHandler) {
