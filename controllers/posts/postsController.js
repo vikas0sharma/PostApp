@@ -23,4 +23,4 @@
     // }
     // PostService.addNewPost(newPost);
 
-}])
+}]);

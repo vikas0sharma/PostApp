@@ -1,0 +1,17 @@
+﻿<div ng-controller="PostController">
+
+    <!--Header directive-->
+    <div header-banner ng-head="{{post.title}}" ng-subhead="Posted by {{post.author}} on {{post.date}}" ng-imgpath="assets/images/post-bg.jpg">
+    </div>
+    <!---->
+
+
+    <!--Post body-->
+    <<div class="container">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <p class="blog-text" ng-bind="post.body"></p>
+        </div>
+    </div>
+
+
+</div>

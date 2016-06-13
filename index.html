@@ -9,12 +9,7 @@
 <body>
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
-            <!--<div class="navbar-header pull-left">
-                <a class="navbar-brand" href="#/">My POST App</a>
-            </div>
-            <div class="nav navbar-nav navbar-right pull-right">
-                <li><a href="#/newpost"><span class="glyphicon glyphicon-plus"></span> Add New Post</a></li>
-            </div>-->
+           
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#options-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -27,44 +22,34 @@
             <div class="collapse navbar-collapse" id="options-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="#/">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="#/about">About</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="post.html">Sample Post</a>
-                    </li>
+                    </li>-->
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#/contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="intro-header" style="background-image: url('assets/images/home-bg.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="logo">
-                        <h1>Blog Ninja</h1>
-                        <br/>
-                        <span class="subhead">
-                            Let's write something in ninja style
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+   
 
+    <!-- View to be loaded-->
     <ng-view></ng-view>
+    <!---view end here-->
+
     <hr />
-    <footer>
+
+    <footer style="overflow:hidden" >
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                <p class="copyright text-muted">Copyright © Your Website 2014</p>
+
+                <p class="copyright text-muted">Copyright © Vikas 2016</p>
             </div>
         </div>
     </footer>
@@ -76,8 +61,11 @@
     <script src="app.js"></script>
     <script src="services/initService.js"></script>
     <script src="controllers/posts/postsController.js"></script>
+    <script src="controllers/post/postController.js"></script>
     <script src="controllers/newpost/newPostController.js"></script>
     <script src="directives/postPanelDirective.js"></script>
+    <script src="directives/bannerDirective.js"></script>
+
 
     <script src="services/postServices.js"></script>
 </body>

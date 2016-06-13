@@ -7,7 +7,32 @@ background-size: cover;
     background: 0 0;
     border-bottom: 1px solid transparent;
     color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
 }
+navbar-custom-new {
+    background: white;
+    border-bottom: 1px solid transparent;
+     position: fixed;
+    top: -61px;
+}
+.navbar-custom .nav li a {
+    text-transform:uppercase;
+    font-weight:800;
+}
+
+.navbar-custom-new .navbar-brand:hover,
+  .navbar-custom-new .navbar-brand:focus {
+       color: #0085a1;
+  }
+  .navbar-custom-new .nav li a:hover,
+  .navbar-custom-new .nav li a:focus {
+    color: #0085a1;
+  }
+
 @media only screen and (min-width: 768px) {
     .navbar-custom {
         background: transparent;
@@ -17,6 +42,7 @@ background-size: cover;
    .navbar-custom .navbar-brand {
      color: white;
      padding: 20px;
+
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
@@ -25,6 +51,7 @@ background-size: cover;
    .navbar-custom .nav li a {
     color: white;
     padding: 20px;
+    text-transform: uppercase;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
@@ -34,7 +61,7 @@ background-size: cover;
 }
 @media only screen and (max-width: 768px) {
      .navbar-custom {
-        background: white;
+        background: white;/*rgba(255, 255, 255, 0.71);*/
         border-bottom: 1px solid transparent;
     }
   .navbar-custom .navbar-brand:hover,
@@ -70,6 +97,15 @@ font-weight: bold;
 padding:100px;
 }
 
+.logo h1 {
+        text-shadow: 5px 5px 5px #2e2c34;
+}
+
+    .logo h1:hover {
+    text-shadow: 5px 5px 5px black;
+    
+    }
+
 .subhead {
 font-size: 24px;
 line-height: 1.1;
@@ -77,18 +113,15 @@ display: block;
 font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 font-weight: 300;
 margin: 10px 0 0;
+text-shadow: 1px 1px 1px #0085a1 ;
+}
 
-}
-.divHeader{
-    background: #00A7FF;
-    font-family: monospace;
-    box-shadow: 0px 1px 5px #A7A7A7;
-    color: white;
-    font-size: large;
-}
 
 .text-style{
+    white-space:nowrap;
+    overflow:hidden;
     color: #060606;
+    text-overflow:ellipsis;
 }
 
 
@@ -113,6 +146,11 @@ border-color: red;
 }
 
 
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #0085a1;
+}
 ::selection {
   color: white;
   text-shadow: none;
@@ -127,6 +165,7 @@ border-color: red;
 }
 .title-style:hover{  
     color: #0085a1;
+    text-shadow:1px 1px 5px grey;
 }
 .author-sign {
 font-style: italic;
@@ -150,4 +189,18 @@ color: grey;
 font-size: 14px;
 text-align: center;
 margin-bottom: 0;
+
+}
+
+hr {
+
+margin-top:30px;
+}
+
+.blog-text {
+
+    line-height: 1.5;
+    margin: 30px 0;
+
+
 }

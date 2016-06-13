@@ -3,12 +3,12 @@
     
 
     var deferred = $q.defer();
-    var url = InitApp.getConfigData().url;
-
+    //var url = InitApp.getConfigData().url;
+    var url = 'services/dummy_data.json';
     this.getAllPosts = function () {
 
         //return dummyData;
-        var url = 'services/dummy_data.json';
+      
 		return $http.get(url)
             .then(function (response) {
                 deferred.resolve(response.data);
@@ -20,6 +20,7 @@
         ;
         
     };
+
 
     this.addNewPost = function (_data,successHandler,errorHandler) {
 

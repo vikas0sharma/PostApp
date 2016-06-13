@@ -1,5 +1,5 @@
 ﻿
-ngPostsApp.directive('postPanel', function () {
+ngPostsApp.directive('postPanel', ['$location', function ($location) {
 
     return {
         restrict: 'A',
@@ -9,6 +9,16 @@ ngPostsApp.directive('postPanel', function () {
             ngAuthor: '@',
             ngDate:'@'
         },
-        templateUrl: 'partials/postpanel/panel.html'
+        templateUrl: 'partials/postpanel/panel.html',
+        link: function (scp, ele, attr) {
+            ele.bind('click', function () {
+                console.log('clicked', attr.ngHeading);
+                console.log($location.path())
+                scp.$apply(function () {
+                    $location.path('/post/' + attr.ngHeading);
+                })
+                
+            })
+        }
     }
-})
+}])

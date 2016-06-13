@@ -1,20 +1,26 @@
-﻿<section ng-controller="PostsController" >
+﻿<div ng-controller="PostsController">
 
+    <!--Header directive-->
+    <div header-banner ng-head="Ninja Blog" ng-subhead="Let's write something in ninja style" ng-imgpath="assets/images/home-bg.jpg">
+    </div>
+    <!---->
+
+    <!--posts list-->
     <div class="container">
-
         <ul style="list-style-type: none;margin-top:30px;">
             <li ng-repeat="post in posts">
                 <div post-panel ng-heading="{{post.title}}" ng-body="{{post.body}}" ng-date="{{post.date}}" ng-author="{{post.author}}"></div>
+
             </li>
         </ul>
-        
+
+
+        <!--footer-->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="btn-style pull-right">Older Posts &rarr;</div>
             </div>
         </div>
-
-
     </div>
 
-</section>
+</div>
